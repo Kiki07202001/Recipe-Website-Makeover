@@ -5,16 +5,19 @@
 }
 
 body {
-    font-family: Times, serif;
-    background-color: #ff00ff;
-    color: #00ff00;
-    line-height: 1;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    background-position: center center;
+    background-size: contain;
+    background-repeat:repeat-y;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/051/491/365/small/purple-potato-flour-gluten-free-on-bowl-healthy-natural-ingredient-for-cooking-or-baking-photo.JPG");
+    color: #ffffff;
+    line-height: 1.5;
 }
 
 .main-header {
-    background-color: #ffff00;
-    border: 5px solid #ff0000;
-    padding: 5px;
+    background-color: #e8dfeb;
+    padding: 10px;
 }
 
 .header-content {
@@ -22,33 +25,38 @@ body {
 }
 
 .site-title {
-    color: #0000ff;
-    font-size: 50px;
-    text-decoration: underline;
-    font-weight: normal;
+    color: #97819f;
+    font-size: 60px;
+    padding-top: 10px;
+    font-weight: 200px;
 }
 
 .main-nav {
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
 .nav-list {
     list-style: decimal;
     display: block;
+    text-align: right;
 }
 
 .nav-list li {
     display: inline;
-    margin-right: 5px;
+    margin-right: 3px;
+    padding: 2px;
 }
 
 .nav-list a {
-    color: #ff0000;
+    display: inline-block;
+    padding: 8px 25px;
+    font-family: cursive;
+    color: #363436;
+    background-color: #ffffff;
+    border: 2px solid #97819f;
+    border-radius: 8px;
     text-decoration: none;
-    background-color: #00ffff;
-    padding: 2px;
-    border: 2px dotted #000000;
-    font-size: 8px;
+    font-size: 20px;
 }
 
 .nav-list a:hover {
@@ -57,12 +65,12 @@ body {
 }
 
 .main-content {
-    padding: 10px;
+    padding: 60px 170px;
 }
 
 .section {
     display: none;
-    margin: 20px 0;
+    margin: 50px 0;
 }
 
 .section.active {
@@ -70,85 +78,107 @@ body {
 }
 
 .hero-section {
-    background-color: #00ff00;
-    padding: 5px;
+    background-color: #97819f;
+    padding: 40px;
     text-align: center;
-    border: 10px double #ff0000;
+    border: 0.5rem solid #cfcfcf;
 }
 
 .hero-title {
-    font-size: 80px;
-    color: #ff00ff;
+    font-size: 100px;
+    font-family: 'Lucida Console', monospace;
+    font-style: oblique;
+    color: #e8dfeb;
     text-transform: uppercase;
-    letter-spacing: 10px;
-    text-shadow: 5px 5px #000000;
+    letter-spacing: 3px;
+    text-shadow: 3px 0px 5px #cfcfcf;
 }
 
 .hero-subtitle {
-    font-size: 6px;
-    color: #0000ff;
+    font-size: 15px;
+    font-family: arial;
+    padding: 15px;
+    font-weight: lighter;
+    transform: scaleX(1.5);
+    color: #cfcfcf;
     margin: 2px 0;
 }
 
 .search-container {
     margin-top: 5px;
-    text-align: left;
+    text-align: center;
 }
 
 .search-input {
-    width: 100px;
-    padding: 1px;
-    font-size: 8px;
-    border: 3px solid #ff0000;
-    background-color: #ffff00;
+    width: 200px;
+    padding: 4px 30px;
+    font-size: 20px;
+    border: 3px solid #cfcfcf;
+    background-color: #FEEABC;
     color: #000000;
+    border-radius: 8px;
 }
 
 .search-button, .clear-button {
-    padding: 1px 3px;
-    background-color: #ff00ff;
-    color: #ffffff;
-    border: 2px solid #000000;
-    font-size: 6px;
+    padding: 0px 15px;
+    background-color: #e8dfeb;
+    color: #6e6e6e;
+    border-radius: 8px;
+    border: 2px solid #FEEABC;
+    font-size: 20px;
+    font-family: cursive;
     cursor: pointer;
 }
 
 .filter-section {
-    background-color: #ffff00;
-    padding: 2px;
-    margin: 5px 0;
+    background-color: #cfcfcf;
+    padding: 20px;
 }
 
 .filter-section h3 {
-    color: #ff0000;
-    font-size: 10px;
-    text-align: right;
+    color: #97819f;
+    font-size: 20px;
+    font-family: arial;
+    transform: scaleX(1.5);
+    font-weight: lighter;
+    padding: 5px;
+    text-align: center;
 }
 
 .filter-buttons {
-    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px;
 }
 
 .filter-btn {
-    background-color: #00ffff;
-    color: #000000;
-    border: 1px solid #ff0000;
-    padding: 1px 2px;
+    background-color: #e8dfeb;
+    color: #97819f;
+    border: 3px solid #FEEABC;
+    padding: 9px 44px;
     margin: 1px;
-    font-size: 5px;
+    font-size: 20px;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .filter-btn.active {
-    background-color: #ff0000;
-    color: #ffffff;
+    background-color: #97819f;
+    color: #e8dfeb;
+}
+
+.recipes-section {
+    background-color: #cfcfcf;
+    padding: 20px;
 }
 
 .recipes-section h2 {
-    color: #0000ff;
-    font-size: 15px;
-    text-align: center;
-    text-decoration: underline;
+    color: #97819f;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: arial;
+    text-align: left;
+    font-weight: bolder;
 }
 
 .sort-controls {
@@ -157,72 +187,93 @@ body {
 }
 
 .sort-controls label {
-    font-size: 4px;
-    color: #ff00ff;
+    font-size: 20px;
+    font-weight: 600;
+    color: #97819f;
 }
 
 .sort-dropdown {
-    font-size: 4px;
-    background-color: #ffff00;
-    border: 1px solid #000000;
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    cursor: pointer;
 }
 
 .recipe-grid {
-    display: block;
-    margin: 10px 0;
+    display: grid;
+    margin: 10px 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
 }
 
 .recipe-card {
-    border: 3px solid #ff0000;
-    background-color: #00ff00;
-    margin: 5px 0;
-    padding: 3px;
-    width: 100%;
-    text-align: left;
-}
-
-.recipe-image {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border: 2px solid #0000ff;
-    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid #97819f;
+    background-color: #ffffff;
+    margin: 5px;
+    padding: 5px;
+    gap:5px;
 }
 
 .recipe-title {
-    font-size: 8px;
-    color: #ff00ff;
-    margin: 1px 0;
+    font-size: 20px;
+    text-align: center;
+    color: #646464;
+    margin: 2px auto;
     text-transform: uppercase;
 }
 
+.recipe-image {
+    margin: 2px auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    background-color: #cccccc;
+}
+
 .recipe-category {
-    font-size: 4px;
-    color: #000000;
+    display:flex;
+    font-size: 20px;
+    color: #828282;
     background-color: #ffffff;
-    padding: 1px;
-    display: inline-block;
+    padding: 3px;
+    justify-content: center;
 }
 
 .recipe-time {
-    font-size: 3px;
-    color: #0000ff;
+    display:flex;
+    font-size: 20px;
+    padding: 3px;
+    color: #5f5f5f;
+    justify-content: center;
 }
 
 .recipe-difficulty {
-    font-size: 3px;
-    color: #ff0000;
+    display:flex;
+    font-size: 20px;
+    padding: 3px;
+    color: #6e6e6e;
+    justify-content: center;
 }
 
 .recipe-rating {
-    font-size: 2px;
-    color: #ffff00;
+    display:flex;
+    font-size: 15px;
+    padding: 3px;
+    color: #97819f;
+    justify-content: center;
 }
 
 .recipe-description {
-    font-size: 3px;
+    font-size: 15px;
+    padding: 3px 20px;
+    text-align: center;
     color: #000000;
-    margin: 2px 0;
+    -webkit-text-stroke: 0.5px #FEEABC;
+    margin: 2px auto;
     line-height: 1;
 }
 
@@ -231,77 +282,95 @@ body {
 }
 
 .favorite-btn, .view-btn {
-    background-color: #ff00ff;
+    background-color: #97819f;
     color: #ffffff;
     border: 1px solid #000000;
-    padding: 1px;
-    font-size: 3px;
+    padding: 2px 20px;
+    font-size: 20px;
+    font-family: cursive;
     cursor: pointer;
-    margin-right: 1px;
+    border-radius: 8px;
+    margin: 2px auto;
+
 }
 
 .favorite-btn.favorited {
-    background-color: #ff0000;
+    background-color: #646464;
 }
 
 .no-results, .no-favorites {
     text-align: center;
-    color: #0000ff;
-    font-size: 6px;
-    background-color: #ffff00;
-    padding: 5px;
-    border: 2px solid #ff0000;
+    font-family: cursive;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #97819f;
+    padding: 70px;
 }
 
 .about-section {
-    background-color: #00ffff;
+    background-color: #97819f;
     padding: 5px;
     text-align: center;
 }
 
 .about-section h2 {
-    color: #ff0000;
-    font-size: 12px;
+    color: #ffffff;
+    text-align: left;
+    font-size: 35px;
+    padding: 20px;
     text-decoration: underline;
 }
 
 .about-section p {
-    font-size: 4px;
-    color: #000000;
-    margin: 2px 0;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 2px auto;
+    padding: 10px 40px;
 }
 
 .stats {
-    margin: 5px 0;
+    margin: 2px auto;
+    padding: 20px;
 }
 
 .stat-item {
     display: inline-block;
-    margin: 2px;
-    background-color: #ff00ff;
-    color: #ffffff;
+    margin: 2px auto;
+    background-color: #FEEABC;
+    color: #5a5a5a;
     padding: 2px;
-    border: 1px solid #000000;
+    border: 3px solid #e8dfeb;
 }
 
 .stat-item h3 {
-    font-size: 6px;
+    font-size: 20px;
+    padding: 5px 100px;
+    text-align: center;
 }
 
 .stat-item p {
-    font-size: 3px;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: #FEEABC;
+    color: #5a5a5a;
+    padding: 5px;
+    text-align: center;
 }
 
 .main-footer {
-    background-color: #000000;
-    color: #ff00ff;
+    background-color: #97819f;
+    color: #FEEABC;
     padding: 3px;
     text-align: left;
-    border-top: 5px solid #ffff00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    border-top: 10px solid #e8dfeb;
 }
 
 .footer-content {
-    font-size: 3px;
+    font-size: 15px;
 }
 
 .footer-links {
@@ -309,34 +378,37 @@ body {
 }
 
 .footer-links a {
-    color: #00ff00;
+    color: #ffffff;
     text-decoration: none;
-    margin-right: 2px;
-    font-size: 2px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .modal {
-    display: none;
-    position: fixed;
+    position:fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 0, 255, 0.8);
+    background-color: #FEEABC;
+    display: flex;
+    align-items: center;
+    overflow: auto;
 }
 
 .modal-content {
-    background-color: #ffff00;
-    margin: 10% auto;
-    padding: 10px;
-    border: 5px solid #ff0000;
-    width: 300px;
+    background-color: #cfcfcf;
+    padding: 15px;
+    margin: 20px auto;
+    border: 5px solid #97819f;
     max-width: 90%;
 }
 
 .close-modal {
-    color: #ff0000;
+    color: #97819f;
     float: right;
     font-size: 20px;
     font-weight: bold;
@@ -344,39 +416,48 @@ body {
 }
 
 .modal-recipe-image {
-    width: 100px;
-    height: 100px;
+    display: block;
+    width: 300px;
+    height: auto;
     object-fit: cover;
-    border: 2px solid #0000ff;
-    float: left;
-    margin-right: 5px;
+    border: 3px solid #ffffff;
+    margin: 2% auto 0 auto;
 }
 
 .modal-recipe-title {
-    font-size: 10px;
-    color: #ff00ff;
-    margin: 2px 0;
+    font-size: 30px;
+    text-align: center;
+    color: #646464;
+    margin: 2px auto;
+    text-transform: uppercase;
 }
 
+
 .modal-ingredients, .modal-instructions {
-    margin: 5px 0;
+    margin: 2px auto;
+    font-size: 1.2rem;
+    color: #828282;
+    background-color: #ffffff;
+    padding: 3px;
 }
 
 .modal-ingredients h4, .modal-instructions h4 {
-    font-size: 6px;
-    color: #0000ff;
+    font-size: 1.5rem;
+    color: #646464;
     text-decoration: underline;
+    margin-bottom: 5px;
 }
 
 .modal-ingredients ul, .modal-instructions ol {
-    font-size: 4px;
+    font-size: 1rem;
     color: #000000;
     margin-left: 10px;
+    padding: 10px;
 }
 
 .modal-ingredients li, .modal-instructions li {
-    margin: 1px 0;
-    line-height: 1;
+    margin: 1px auto;
+    line-height: 2;
 }
 
 @media (max-width: 768px) {
@@ -393,7 +474,7 @@ body {
     }
     
     .recipe-card {
-        margin: 3px 0;
+        margin: 2px auto;
     }
     
     .recipe-image {
@@ -402,7 +483,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 90%) {
     .site-title {
         font-size: 20px;
     }
@@ -413,11 +494,11 @@ body {
     
     .nav-list li {
         display: block;
-        margin: 1px 0;
+        margin: 2px auto;
     }
     
     .modal-content {
         width: 250px;
-        margin: 20% auto;
+        margin: 2px auto;
     }
 }
